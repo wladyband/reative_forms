@@ -81,7 +81,7 @@ export class RecipeEditComponent implements OnInit {
       recipeName = recipe.name;
       recipeImagePath = recipe.imagePath;
       recipeDescription = recipe.description;
-      recipeIngredients.get('recipeForm');
+      recipeIngredients.get('recipeForm').disable();//>>>>> É AQUI
       if (recipe['ingredients']) {
         for (let ingredient of recipe.ingredients) {
           recipeIngredients.push(
